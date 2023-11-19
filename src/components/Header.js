@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 
 function Header() {
 
-    // const navigate = useNavigate()
-
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">

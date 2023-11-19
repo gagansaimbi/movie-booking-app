@@ -1,11 +1,9 @@
 import QRCode from "react-qr-code";
-
 import {  useSelector } from "react-redux"
 import {  useNavigate } from 'react-router-dom'
 
 function BookingComplete() {
     const navigate = useNavigate()
-    
     
     const bookingDetail = useSelector((state) => state.moviesData.userSelectionInfo)
     console.log(bookingDetail)

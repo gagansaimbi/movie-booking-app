@@ -3,8 +3,6 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import { saveEvents } from '../redux/movie.slice'
-// import Header from './Header';
-
 
 function Events() {
     const dispatch = useDispatch();
@@ -25,7 +23,6 @@ function Events() {
 
     return (
         <>
-            {/* <Header /> */}
             <br />
             <h1 className='text-center'>Events</h1>
             <hr />

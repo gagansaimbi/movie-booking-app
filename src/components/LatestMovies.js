@@ -3,8 +3,6 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from "react-redux"
 import { saveLatestMovies } from '../redux/movie.slice'
-// import Header from './Header';
-
 
 function LatestMovies() {
     const dispatch = useDispatch();
@@ -18,14 +16,12 @@ function LatestMovies() {
     }
     const latestMoviesList = useSelector((state) => state.moviesData.latestMovieList);
 
-
     useEffect(() => {
         getLatestMovies()
     }, [])
 
     return (
         <>
-            {/* <Header /> */}
             <h1 className="text-center">Latest Movies</h1>
             <hr />
 
